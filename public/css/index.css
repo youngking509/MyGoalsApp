@@ -1,0 +1,45 @@
+
+body{
+  background-color: #A0522D;
+  text-align: center;
+
+}
+
+
+.title{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-decoration:line-through; */
+  }
+
+
+
+  li{
+    background: #743416;
+    padding: 5px;
+    margin-left: 35px;
+    
+  }
+
+  ol li {
+    list-style-type: circle;
+    
+  }
+
+  
+
+  .main{
+    text-decoration: aliceblue;
+    color: aliceblue;
+  }
+
+  .name{
+    color: aliceblue;
+  }
+
+  .delete{
+    color: red;
+    
+  }

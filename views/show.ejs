@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/show.css">
+    <title>Goal Details</title>
+</head>
+
+
+
+<body>
+    <h1 class="title">MY PLANS</h1>
+    <div class="image-container"> 
+        <img src="https://st2.depositphotos.com/3837271/8402/i/950/depositphotos_84026294-stock-photo-goals-on-desert-road.jpg" alt="target"> 
+        <img class="transition-image" src="https://projectlifemastery.com/wp-content/uploads/2014/01/achieving-your-goals.jpg" alt="">
+        
+    </div>
+    <ul>
+        <li>
+            <h3>
+                <%=goal.name %>
+            </h3>
+            <p> <%= goal.description %>
+            </p>
+            <!-- <p>You have book.completed ? 'completed' : 'not completed'  this book</p> -->
+            <a href="/goal">Back to List</a>
+        </li>
+    </ul>
+</body>
+
+</html>

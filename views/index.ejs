@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/index.css">
+    <img src="/img/target.png" alt="">
+    <title>MyGoalsApp</title>
+</head>
+<body>
+  <h1 class="title">My 2022 Goal List</h1>
+  <ol>
+      <% goal.forEach(goal=> { %>
+        <div class="main">
+          <li>
+              <a class="name" href="/goal/<%= goal._id %>">
+                  <%= goal.name; %>
+              </a>
+              <form action="/goal/<%= goal.id %>?_method=DELETE" method="POST" style="display: inline; margin-left: 16px;">
+                  <input class="delete" type="submit" value="X" style="float: left;" />
+              </form>
+              <a class="name" href="/goal/<%=goal._id %>/edit">Edit</a>
+          </li>
+        </div>
+          <% }); %>
+  </ol>
+  <a href="/new/">Add New Goal</a>
+</body>
+</html>
