@@ -112,6 +112,10 @@ app.get("/goal/:id", (req, res) => {
 });
 
 
+//catch url mistakes
+app.get("goal/", (req,res) => {
+	res.redirect("/goal");
+});
 
 
 
