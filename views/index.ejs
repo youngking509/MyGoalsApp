@@ -8,23 +8,35 @@
     <img src="/img/target.png" alt="">
     <title>MyGoalsApp</title>
 </head>
+
+<div>
+    <h1 class="header" >My 2022 Goal</h1>
+    <p class="quote">Il vaut mieux faire que dire.</p>
+</div>
+
+
 <body>
-  <h1 class="title">My 2022 Goal List</h1>
   <ol>
       <% goal.forEach(goal=> { %>
         <div class="main">
           <li>
-              <a class="name" href="/goal/<%= goal._id %>">
+              <a class="month" href="/goal/<%= goal._id %>">
                   <%= goal.name; %>
               </a>
               <form action="/goal/<%= goal.id %>?_method=DELETE" method="POST" style="display: inline; margin-left: 16px;">
-                  <input class="delete" type="submit" value="X" style="float: left;" />
+                  <input class="delete" type="submit" value="X" />
               </form>
-              <a class="name" href="/goal/<%=goal._id %>/edit">Edit</a>
+              <a class="edit" href="/goal/<%=goal._id %>/edit">Modify</a>
           </li>
         </div>
           <% }); %>
   </ol>
-  <a href="/new/">Add New Goal</a>
+</br>
+  <a class="button" href="/new/">Add New Goal</a>
 </body>
+
+<div>
+    <footer class="footer">Let's Go !!!</footer>
+</div>
+<!-- style="float: left;" -->
 </html>

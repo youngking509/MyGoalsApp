@@ -43,6 +43,11 @@ app.use('/public', express.static('public'))
 
 // ROUTES
 
+//catch url mistakes
+app.get("/", (req,res) => {
+	res.redirect("/goal");
+});
+
 // Index Route
 app.get('/goal', (req, res) => {
     Goal.find({}, (err, goal) => {
@@ -73,13 +78,14 @@ app.delete('/goal/:id', (req, res) => {
 // update route
 app.put("/goal/:id", (req, res) => {
     // res.send(req.body)
+    console.log(req.body)
     Goal.findByIdAndUpdate(
         req.params.id,
         req.body,
         {
             new: true,
         },
-        (error, updatedBook) => {
+        (error, updatedGoal) => {
           res.redirect(`/goal/${req.params.id}`)
         }
       )
@@ -112,10 +118,7 @@ app.get("/goal/:id", (req, res) => {
 });
 
 
-//catch url mistakes
-app.get("goal/", (req,res) => {
-	res.redirect("/goal");
-});
+
 
 
 

@@ -15,6 +15,19 @@ input {
     border: 1px solid var(--light-green);
     border-radius: 5px;
     text-align: center;
+    
+}
+
+.submit{
+    border: 2px solid #743416; /* Green */
+}
+
+  .submit:hover {background-color: #3e8e41}
+
+  .submit:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }
 
 /* input[type="submit"] {
