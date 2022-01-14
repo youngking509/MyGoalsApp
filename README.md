@@ -23,8 +23,12 @@ MyYearlyGoals is an application that'll let users add their yearly goals. Will b
 * JavaScript
 * HTML5
 * CSS3
-* 
+* Express
 * EJS
+* Node.js
+* Heroku
+* Mongoose
+* MongoDB
 
 
 
