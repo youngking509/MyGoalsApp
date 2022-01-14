@@ -74,13 +74,30 @@ body{
   .delete{
     color: red;
     float: left;
-    
   
-
   }
+
+  .delete:hover {background-color:red}
+
+.delete:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 
   .edit{
     float: right;
+    color:aliceblue;
+    
+  }
+
+  .edit:hover {background-color: #3e8e41}
+
+  .edit:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }
 
   .month{
