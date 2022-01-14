@@ -37,7 +37,7 @@ MyYearlyGoals is an application that'll let users add their yearly goals. Will b
 ## <a name="nextsteps"></a>Project Next Steps
 * I should be able to delete goals off my list when the've been achieved
 * As a user I should have to log in to access my goals list
-* 
+* Be able to move each goal from around. To change the order
 
 
 
@@ -49,8 +49,9 @@ https://github.com/youngking509/MyGoalsApp
 * click here to see the deployed app --> https://goaly-goaly.herokuapp.com/
 
 
+## Most prouf of
+* style.css
 
-    
 ## Works Cited:
 * N/A
 
